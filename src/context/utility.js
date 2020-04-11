@@ -3,7 +3,7 @@ import React, {
     useContext as useReactContext,
 } from 'react';
 import ContextDevTool from 'react-context-devtool';
-import {camelCase} from '@nitropack/utility';
+import {camelCase} from '@propus/utility';
 
 const makeProps = (context, key) => {
     const {state, setState} = context;

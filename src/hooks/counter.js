@@ -15,7 +15,6 @@ const useCounter = (duration, interval = 1000, countup = false) => {
                     clearTimeout(timer);
                 };
             }
-            return;
         },
         [counter],
     );

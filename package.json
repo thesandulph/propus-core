@@ -31,8 +31,12 @@
         "prepublishOnly": "yarn build"
     },
     "dependencies": {
+        "@propus/control": "^0.0.1",
+        "@propus/utility": "^0.0.4",
+        "prop-types": "^15.7.2",
         "react": "^16.13.1",
-        "react-context-devtool": "^1.0.1"
+        "react-context-devtool": "^1.0.1",
+        "react-helmet": "^6.0.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.7.0",

@@ -2,13 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {makeImage} from './utility';
 
-const Image = ({
-   alt, source, webp, ...props
-}) => {
+const Image = ({alt, source, webp, className, ...props}) => {
     const image_props = makeImage(source, webp, alt);
     if (image_props) {
         return (
             <img
+                className={className}
                 {...props}
                 {...image_props}
             />
@@ -18,6 +17,7 @@ const Image = ({
 };
 
 Image.propTypes = {
+    className: PropTypes.string,
     alt: PropTypes.oneOfType([
         PropTypes.string,
         PropTypes.object,
@@ -34,6 +34,7 @@ Image.propTypes = {
 
 Image.defaultProps = {
     webp: null,
+    className: null,
 };
 
 export default Image;

@@ -1,4 +1,4 @@
-import {toArray} from '@reatc/utility';
+import {toArray} from '@propus/utility';
 import {useImageContext} from './context';
 import {useTextContext} from '../text';
 
@@ -15,7 +15,7 @@ const createImageSet = (images) => {
 export const makeImage = (source, webp, alt) => {
     const {text} = useTextContext();
     const {image} = useImageContext();
-    const images = toArray(image.support_webp ? webp || source : source);
+    const images = toArray(image.webp_support ? webp || source : source);
     if (images.length) {
         return {
             alt: text.format(alt),
