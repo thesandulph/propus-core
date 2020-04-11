@@ -1,0 +1,51 @@
+{
+    "name": "@propus/core",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "description": "Propus coming soon...",
+    "author": "Propus Team",
+    "license": "MIT",
+    "homepage": "https://github.com/thesandulph/propus-core#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thesandulph/propus-core.git"
+    },
+    "bugs": {
+        "url": "https://github.com/thesandulph/propus-core/issues"
+    },
+    "keywords": [
+        "propus"
+    ],
+    "pre-commit": [
+        "lint"
+    ],
+    "scripts": {
+        "clean": "rimraf dist",
+        "clean-all": "rimraf dist node_modules yarn.lock package-lock.json",
+        "lint": "echo LINITING comming soon!",
+        "prerefresh": "yarn clean-all",
+        "refresh": "yarn install",
+        "prebuild": "yarn clean && yarn lint",
+        "build": "yarn rollup -c",
+        "prepublishOnly": "yarn build"
+    },
+    "dependencies": {
+        "react": "^16.13.1",
+        "react-context-devtool": "^1.0.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.7.0",
+        "@babel/core": "^7.7.2",
+        "@babel/plugin-proposal-class-properties": "^7.7.4",
+        "@babel/plugin-proposal-export-default-from": "^7.8.3",
+        "@babel/preset-env": "^7.7.4",
+        "@babel/preset-react": "^7.7.1",
+        "@rollup/plugin-commonjs": "^11.0.1",
+        "@rollup/plugin-node-resolve": "^7.0.0",
+        "pre-commit": "^1.2.2",
+        "rimraf": "^3.0.0",
+        "rollup": "^1.27.5",
+        "rollup-plugin-babel": "^4.3.3"
+    }
+}
