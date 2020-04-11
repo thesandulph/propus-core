@@ -944,18 +944,6 @@
     prop-types "^15.7.2"
     react "^16.13.1"
 
-"@propus/utility@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@propus/utility/-/utility-0.0.4.tgz#92417c0cd87b1fe7f11434c36dbef8c6bd886e16"
-  integrity sha512-/Jui42wQNkKSMQ0KkcHdV4msBepI4GzKLm+mok7p1cAL6CPJLWRKz8LiqRxlAtdyju8yhW9s5u+IuVyE9bw+3A==
-  dependencies:
-    change-case "^4.1.1"
-    fast-deep-equal "^3.1.1"
-    initialism "^1.0.1"
-    is-valid-path "^0.1.1"
-    query-string "^6.11.1"
-    store "^2.0.12"
-
 "@propus/utility@^0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@propus/utility/-/utility-0.0.5.tgz#6e84adcf779900f91b0eb3e94e042f94016fc6c1"
