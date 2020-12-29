@@ -21,22 +21,26 @@
         "lint"
     ],
     "scripts": {
-        "clean": "rimraf dist",
-        "clean-all": "rimraf dist node_modules yarn.lock package-lock.json",
-        "lint": "echo LINITING comming soon!",
-        "prerefresh": "yarn clean-all",
+        "lint": "echo \"LINITING comming soon!\"",
+        "clean": "rimraf dist node_modules package-lock.json yarn.lock",
+        "postclean": "yarn cache clean",
+        "prerefresh": "yarn clean",
         "refresh": "yarn install",
-        "prebuild": "yarn clean && yarn lint",
+        "prebuild": "yarn lint",
         "build": "yarn rollup -c",
-        "prepublishOnly": "yarn build"
+        "prebuild:publish": "yarn refresh",
+        "build:publish": "yarn build",
+        "prepublishOnly": "yarn build:publish"
     },
     "dependencies": {
-        "@propus/control": "^0.0.1",
-        "@propus/utility": "^0.0.5",
+        "@propus/control": "^0.0.6",
+        "@propus/utility": "^0.0.8",
         "prop-types": "^15.7.2",
-        "react": "^16.13.1",
-        "react-context-devtool": "^1.0.1",
-        "react-helmet": "^6.0.0"
+        "react": "^17.0.1",
+        "react-context-devtool": "^2.0.0",
+        "react-helmet": "^6.1.0",
+        "react-redux": "^7.2.2",
+        "redux-devtools-extension": "^2.13.8"
     },
     "devDependencies": {
         "@babel/cli": "^7.7.0",

@@ -2,7 +2,7 @@ import React, {
     createContext as createReactContext,
     useContext as useReactContext,
 } from 'react';
-import ContextDevTool from 'react-context-devtool';
+import {ContextDevTool} from 'react-context-devtool';
 import {camelCase} from '@propus/utility';
 
 const makeProps = (context, key) => {
@@ -49,7 +49,7 @@ export const createContext = (key, callback) => {
     const Context = createReactContext(callback());
     return [
         makeProvider(Context, key, callback),
-        makeHook(Context, key),
         makeConsumer(Context, key),
+        makeHook(Context, key),
     ];
 };

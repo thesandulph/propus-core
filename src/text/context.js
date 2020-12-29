@@ -1,9 +1,13 @@
+import {toCurrency} from '@propus/utility';
 import {createContext} from '../context';
 
-const callback = ({format = (value => value), currency = (value => value)} = {}) => ({format, currency});
+const callback = ({
+    format = (value => value),
+    currency = toCurrency
+} = {}) => ({format, currency});
 
 export const [
     TextProvider,
-    useTextContext,
     withText,
+    useTextContext,
 ] = createContext('text', callback);
