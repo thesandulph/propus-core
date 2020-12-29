@@ -1,6 +1,6 @@
 {
     "name": "@propus/core",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "description": "Propus coming soon...",
@@ -38,7 +38,6 @@
         "prop-types": "^15.7.2",
         "react": "^17.0.1",
         "react-context-devtool": "^2.0.0",
-        "react-helmet": "^6.1.0",
         "react-redux": "^7.2.2",
         "redux-devtools-extension": "^2.13.8"
     },
