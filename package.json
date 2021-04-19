@@ -1,6 +1,6 @@
 {
     "name": "@propus/core",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "description": "Propus coming soon...",
@@ -33,7 +33,7 @@
         "prepublishOnly": "yarn build:publish"
     },
     "dependencies": {
-        "@propus/utility": "^0.0.11",
+        "@propus/utility": "^0.0.12",
         "react": "^17.0.2",
         "react-context-devtool": "^2.0.3"
     },
